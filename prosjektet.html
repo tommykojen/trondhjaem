@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favico.png">
+    <title>(Trond)hjæm</title>
+</head>
+<body id="prosjekt-body">
+
+    <a href="menu.html" class="meny">Meny</a>
+
+    <a href="menu.html" class="meny">Meny</a>
+    <label class="switch">
+      <input type="checkbox" onclick="prosjekt()">
+      <span class="slider round"></span>
+    </label>
+
+    <script>
+      function prosjekt() {
+      var element = document.getElementById("prosjekt-body");
+      element.classList.toggle("dark-mode");
+    }
+    </script>
+
+    <header>
+        <h2>Om prosjektet</h2>
+    </header>
+
+    <main class="prosjektet">
+        <p>Å vandre turer ble manges viktigste terapi under de mange lockdown-periodene under koronapandemien. 
+            Jeg var ikke noe unntak og endte opp med å gå mye tur med kameraet mitt, spesielt på Tiller, Ranheim og Midtbyen.
+            Etter jeg flyttet hjem sommeren 2021 begynte jeg å disse turene igjen og bestemte meg for å lage dette prosjektet
+            for å dokumentere disse områdene som betyr mye for meg.
+            <br><br>
+            Prosjektet har som mål å både dokumentere Trondheim anno 2022, og å vise en slags ro byen kan gi i 
+            vanskelige tider som lockdown var. 
+        </p>
+    </main>
+
+    <div class="footerdiv">
+        <p class="footer">foto + webdesign + kode av Tommy Kojen</p>
+    </div>
+</body>
+</html>

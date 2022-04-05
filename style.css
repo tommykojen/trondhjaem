@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;500;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima Madurai';
+    box-sizing: border-box;
+}
+
+body{
+    display: none;
+}
+
+.onloadstyle{
+  display: block;
+  background-color: #FBF9ED !important;
+  color: #042102;
+}
+
+header{
+    text-align: center;
+}
+
+h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+h2{
+    padding: 6rem 2rem 2rem 2rem;
+    font-size: 5rem;
+}
+
+h3{
+    font-size: 2rem;
+    padding: 3rem 3rem;
+    max-width: 60vw;
+    font-weight: 400;
+}
+
+header>p{
+    margin: 0 20rem; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 3rem;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 3rem 3rem;
+  }
+
+  .column100 {
+    flex: 100%;
+    max-width: 100%;
+    padding: 3rem 3rem;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 800px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+      padding: 1rem 0;
+    }
+    .column100 {
+        flex: 100%;
+        max-width: 100%;
+        padding: 1rem 0;
+      }
+
+      h3{
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    header>p{
+        margin: 0 1rem; 
+    }
+
+    .prosjektet > p{
+        padding: 2rem 2rem !important;
+    }
+
+    .switch {
+        margin-left: 80% !important;
+      }
+      .index{
+        display: none;
+      }
+      
+  }
+
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .switch {
+        margin-left: 90% !important;
+      }
+    }
+
+.footer  {
+      display: block;
+      text-align: center;
+      padding-top: 5rem;
+      padding-bottom: 2rem;
+  }
+
+  .meny{
+      position: fixed;
+      padding: 2rem 2rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: underline;
+  }
+
+.body-menu{
+    height: 100vh;
+    background-color: #042102;
+}
+
+.body-menu > header > h1{
+    color: #FBF9ED;
+}
+
+.body-menu > a{
+    color: #FBF9ED;
+}
+
+
+.body-menu > main > ul > li > a{
+    color: #FBF9ED;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.body-menu > main > ul > li > a:hover{
+    color: #104c0c;
+    text-decoration: underline;
+}
+
+.body-menu > main > ul > li{
+    text-align: center;
+}
+
+.body-menu > main > ul{
+    padding-top: 30vh;
+}
+
+.prosjektet{
+    max-width: 100%;
+    height: 70vh;
+}
+
+.prosjektet > p{
+    text-align: center;
+    padding: 5rem 20rem 5rem 20rem;
+}
+
+.dark-mode{
+    background-color: #042102 !important;
+    color: #FBF9ED;
+}
+
+.dark-mode-link{
+  color: #FBF9ED;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: fixed;
+    display: block;
+    width: 60px;
+    height: 34px;
+    margin: 2rem 1.5rem;
+    margin-left: 95%;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #042102;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(235, 235, 235);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  
+  input:checked + .slider {
+    background-color: #FBF9ED;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #242424;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .menu-footer{
+      color: #FBF9ED;
+      text-align: center;
+      padding-top: 35vh;
+  }
+
+  .index{
+    margin: 25vh 2rem;
+    position: fixed;
+  }
+
+  .index li{
+    list-style: none;
+    margin-bottom: 6rem;
+  }
+
+  .index li a{
+    text-decoration: none;
+  }
+
+  .scroll{
+    color: #042102;
+    font-size: 2rem;
+    transition: 0.5s;
+  }
+
+  .scroll-dark{
+    color: #FBF9ED !important;
+    font-size: 2rem;
+    transition: 0.5s;
+  }
+
+
+  .default{
+    font-size: 1rem;
+    color: #042102;
+    transition: 0.5s;
+  }
+
+  .default-dark{
+    font-size: 1rem;
+    color:#FBF9ED;
+    transition: 0.5s;
+  }
+
+
+  .bg{
+    background-position: bottom right;
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 80px);
+  }
